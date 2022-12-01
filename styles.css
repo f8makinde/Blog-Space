@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+#blog-list{
+    padding: 1em;
+}

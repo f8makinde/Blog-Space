@@ -2,12 +2,14 @@ fetch('https://apis.scrimba.com/jsonplaceholder/posts')
 .then(response => response.json())
 .then(data => {
     const postArr = data.slice(0, 5)
+    let html = ""
     for(post of postArr){
-        document.getElementById("blog-list").innerHTML +=
+           html +=
          `
-          <h1>${post.title}</h1>
-          <h3>${post.body}</h3>
+          <h3>${post.title}</h3>
+          <p>${post.body}</p>
           <hr/>
-        `
+        `   
     }
+    document.getElementById("blog-list").innerHTML = html;
 })
